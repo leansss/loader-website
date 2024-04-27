@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public loader</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-image: url('https://media.discordapp.net/attachments/1229906689554255933/1230505682915037245/tumblr_2fa003d045977721e6d438bb388215a3_7ea3e621_540.gif?ex=662e4ab8&is=662cf938&hm=cc68d0d37ee6d05d3c159e7cbe32b745979f6631bca4994f9327767b7f3513ab&=');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #7700ff;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form id="accessForm">
+        <input type="text" id="keyInput" placeholder="Enter Key ">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+<script>
+    document.getElementById("accessForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Implement key validation logic here
+        var enteredKey = document.getElementById("keyInput").value;
+        var correctKey = "StarFN-Rt4E14-EbgWwq"; // Replace with your actual key
+
+        if (enteredKey === correctKey) {
+            // Redirect to the download page or perform any other action
+            window.location.href = "https://cdn.discordapp.com/attachments/1229906689554255933/1233712668465041518/StarFn_Public.exe?ex=662e17f5&is=662cc675&hm=0761af69b7fa52e821dd37a54c61f435521e781fcbf5335c5852160b5a8a5173&"; // Replace with your download page URL
+        } else {
+            alert("Invalid key nigger.");
+        }
+    });
+</script>
+
+</body>
+</html>
